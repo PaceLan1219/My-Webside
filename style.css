@@ -1,0 +1,43 @@
+/* 1. 页面全局样式 */
+body {
+    background-color: #f4f6f9; /* 浅灰色背景，不刺眼 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; /* 现代无衬线字体 */
+    color: #333333; /* 主文字颜色 */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; /* 内容水平居中 */
+    justify-content: center;
+    min-height: 100vh; /* 垂直居中铺满屏幕 */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 2. 标题样式 */
+h1 {
+    color: #1a2b4c; /* 深蓝色标题，有层次感 */
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+/* 3. 段落文本样式 */
+p {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* 4. 图片卡片化与美化 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* 圆角效果 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* 阴影效果，增加立体感 */
+    transition: transform 0.3s ease; /* 鼠标悬停动画 */
+}
+
+img:hover {
+    transform: scale(1.02); /* 悬停时微微放大 */
+}
