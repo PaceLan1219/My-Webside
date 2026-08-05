@@ -1,23 +1,27 @@
-/* =========================
-   Pace Lan Portfolio V2.0
-   Main Style
-========================= */
+/* 
+   Pace Lan Portfolio
+   V2.0 Premium Edition
+*/
 
 
-/* 全局设置 */
+/* =====================
+   Global Settings
+===================== */
+
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-
-    margin: 0;
-
-    padding: 40px 20px;
-
-    background-color: #f4f6f9;
 
     font-family:
     -apple-system,
@@ -27,28 +31,114 @@ body {
     Arial,
     sans-serif;
 
+    background: #f4f7fb;
+
     color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =====================
+   Navigation Bar
+===================== */
+
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    box-shadow:
+    0 3px 12px rgba(0,0,0,0.08);
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    color: #1a2b4c;
+
+}
+
+
+
+.navbar ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s;
+
+}
+
+
+
+.navbar a:hover {
+
+    color: #2563eb;
+
+}
+
+
+
+/* =====================
+   Hero Section
+===================== */
+
+
+.hero {
+
+    min-height: 90vh;
 
     display: flex;
 
     flex-direction: column;
 
+    justify-content: center;
+
     align-items: center;
-
-    line-height: 1.6;
-}
-
-
-
-/* 首页区域 */
-
-.hero {
 
     text-align: center;
 
-    max-width: 700px;
-
-    margin-bottom: 35px;
+    padding: 40px 20px;
 
 }
 
@@ -56,18 +146,19 @@ body {
 
 .profile-image {
 
-    width: 180px;
+    width: 220px;
 
-    height: 180px;
-
-    object-fit: cover;
+    height: 220px;
 
     border-radius: 50%;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
 
-    margin-bottom: 20px;
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,0.15);
+
+    margin-bottom: 25px;
 
 }
 
@@ -75,9 +166,7 @@ body {
 
 .hero h1 {
 
-    font-size: 2.5rem;
-
-    margin: 10px 0;
+    font-size: 3rem;
 
     color: #1a2b4c;
 
@@ -85,9 +174,9 @@ body {
 
 
 
-.hero p {
+.hero h3 {
 
-    margin: 8px;
+    margin-top: 10px;
 
     color: #555;
 
@@ -95,74 +184,161 @@ body {
 
 
 
-.intro {
+.hero p {
 
-    max-width: 500px;
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    color: #666;
 
 }
 
 
 
-/* 内容卡片 */
+/* Button */
 
-.card {
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 28px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+.button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =====================
+   Sections
+===================== */
+
+
+.section {
+
+    max-width: 900px;
+
+    margin: 40px auto;
 
     background: white;
 
-    width: 100%;
+    padding: 35px;
 
-    max-width: 700px;
-
-    padding: 30px;
-
-    margin-bottom: 25px;
-
-    border-radius: 16px;
+    border-radius: 18px;
 
     box-shadow:
-    0 5px 18px rgba(0,0,0,0.08);
+
+    0 8px 25px rgba(0,0,0,0.07);
 
 }
 
 
 
-.card h2 {
-
-    margin-top: 0;
+.section h2 {
 
     color: #1a2b4c;
 
-    border-bottom:
+    margin-bottom: 20px;
 
-    2px solid #eef2f7;
-
-    padding-bottom: 10px;
+    font-size: 1.8rem;
 
 }
 
 
 
-/* 项目模块 */
 
-.project {
 
-    background-color: #f8fafc;
+/* =====================
+   Skills Tags
+===================== */
 
-    padding: 20px;
 
-    margin-top: 15px;
+.tags {
 
-    border-radius: 12px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
 
 }
 
 
 
-.project h3 {
+.tags span {
 
-    margin-top: 0;
+    background: #e8f0ff;
 
-    color: #2b579a;
+    color: #2563eb;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 0.95rem;
+
+}
+
+
+
+/* =====================
+   Project Cards
+===================== */
+
+
+.card {
+
+    background: #f8fafc;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.card h3 {
+
+    color: #2563eb;
+
+    margin-bottom: 10px;
 
 }
 
@@ -170,70 +346,85 @@ body {
 
 .status {
 
-    font-size: 0.9rem;
+    display: inline-block;
 
-    color: #777;
+    margin-top: 15px;
 
-}
+    padding: 5px 14px;
 
+    background: #eef2f7;
 
+    border-radius: 15px;
 
-/* 兴趣列表 */
+    color: #555;
 
-ul {
-
-    padding-left: 20px;
-
-}
-
-
-
-li {
-
-    margin-bottom: 8px;
+    font-size: 0.85rem;
 
 }
 
 
 
-/* 底部 */
+/* =====================
+   Footer
+===================== */
+
 
 footer {
 
-    margin-top: 20px;
+    text-align: center;
+
+    padding: 30px;
 
     color: #777;
-
-    font-size: 0.9rem;
 
 }
 
 
 
-/* 手机适配 */
-
-@media (max-width: 600px) {
-
-
-    body {
-
-        padding: 25px 15px;
-
-    }
+/* =====================
+   Mobile Responsive
+===================== */
 
 
-    .hero h1 {
-
-        font-size: 2rem;
-
-    }
+@media(max-width:700px){
 
 
-    .card {
+.navbar {
 
-        padding: 20px;
+    flex-direction: column;
 
-    }
+    gap: 15px;
+
+}
+
+
+
+.navbar ul {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: 2.2rem;
+
+}
+
+
+
+.section {
+
+    margin: 25px 15px;
+
+    padding: 25px;
+
+}
+
 
 
 }
