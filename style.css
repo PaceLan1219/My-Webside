@@ -1,24 +1,23 @@
+/* =========================
+   Pace Lan Portfolio V2.0
+   Main Style
+========================= */
+
+
+/* 全局设置 */
+
 * {
-
-    margin: 0;
-
-    padding: 0;
-
     box-sizing: border-box;
-
 }
-
-
-
-html {
-
-    scroll-behavior: smooth;
-
-}
-
 
 
 body {
+
+    margin: 0;
+
+    padding: 40px 20px;
+
+    background-color: #f4f6f9;
 
     font-family:
     -apple-system,
@@ -28,143 +27,47 @@ body {
     Arial,
     sans-serif;
 
-
-    background-color: #f4f7fb;
-
     color: #333;
 
-    line-height: 1.6;
-
-}
-
-
-
-
-
-
-/* Navigation */
-
-
-nav {
-
-
-    width: 100%;
-
-
-    background: white;
-
-
     display: flex;
-
-
-    justify-content: space-between;
-
-
-    align-items: center;
-
-
-    padding: 20px 10%;
-
-
-    position: sticky;
-
-
-    top: 0;
-
-
-    z-index: 100;
-
-
-    box-shadow:
-    0 3px 12px rgba(0,0,0,0.08);
-
-
-}
-
-
-
-nav h2 {
-
-
-    color: #2563eb;
-
-
-}
-
-
-
-nav ul {
-
-
-    list-style: none;
-
-
-    display: flex;
-
-
-    gap: 25px;
-
-
-}
-
-
-
-nav a {
-
-
-    text-decoration: none;
-
-
-    color: #333;
-
-
-    font-weight: 500;
-
-
-}
-
-
-
-nav a:hover {
-
-
-    color: #2563eb;
-
-
-}
-
-
-
-
-
-
-
-/* Hero */
-
-
-.hero {
-
-
-    min-height: 90vh;
-
-
-    display: flex;
-
 
     flex-direction: column;
 
-
-    justify-content: center;
-
-
     align-items: center;
 
+    line-height: 1.6;
+}
+
+
+
+/* 首页区域 */
+
+.hero {
 
     text-align: center;
 
+    max-width: 700px;
 
-    padding: 40px 20px;
+    margin-bottom: 35px;
 
+}
+
+
+
+.profile-image {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.15);
+
+    margin-bottom: 20px;
 
 }
 
@@ -172,31 +75,11 @@ nav a:hover {
 
 .hero h1 {
 
+    font-size: 2.5rem;
 
-    font-size: 3rem;
+    margin: 10px 0;
 
-
-    color: #1e3a8a;
-
-
-    margin-bottom: 15px;
-
-
-}
-
-
-
-.hero h3 {
-
-
-    font-size: 1.4rem;
-
-
-    color: #555;
-
-
-    margin-bottom: 20px;
-
+    color: #1a2b4c;
 
 }
 
@@ -204,297 +87,151 @@ nav a:hover {
 
 .hero p {
 
+    margin: 8px;
 
-    max-width: 650px;
-
-
-    margin-bottom: 30px;
-
-
-    color: #666;
-
+    color: #555;
 
 }
 
 
 
+.intro {
 
-
-/* Button */
-
-
-.button {
-
-
-    background: #2563eb;
-
-
-    color: white;
-
-
-    padding: 12px 28px;
-
-
-    border-radius: 30px;
-
-
-    text-decoration: none;
-
-
-    transition: 0.3s;
-
+    max-width: 500px;
 
 }
 
 
 
-.button:hover {
-
-
-    background: #1d4ed8;
-
-
-    transform: translateY(-3px);
-
-
-}
-
-
-
-
-
-
-
-/* Sections */
-
-
-.section {
-
-
-    width: 85%;
-
-
-    max-width: 900px;
-
-
-    margin: 60px auto;
-
-
-}
-
-
-
-.section h2 {
-
-
-    text-align: center;
-
-
-    color: #1e3a8a;
-
-
-    font-size: 2rem;
-
-
-    margin-bottom: 30px;
-
-
-}
-
-
-
-
-
-
-
-/* Cards */
-
+/* 内容卡片 */
 
 .card {
 
-
     background: white;
 
+    width: 100%;
+
+    max-width: 700px;
 
     padding: 30px;
-
-
-    border-radius: 16px;
-
 
     margin-bottom: 25px;
 
+    border-radius: 16px;
 
     box-shadow:
-
-    0 5px 15px rgba(0,0,0,0.08);
-
-
-    transition: 0.3s;
-
+    0 5px 18px rgba(0,0,0,0.08);
 
 }
 
 
 
-.card:hover {
+.card h2 {
 
+    margin-top: 0;
 
-    transform: translateY(-5px);
+    color: #1a2b4c;
 
+    border-bottom:
 
-}
+    2px solid #eef2f7;
 
-
-
-.card h3 {
-
-
-    color: #2563eb;
-
-
-    margin-bottom: 10px;
-
+    padding-bottom: 10px;
 
 }
 
 
 
+/* 项目模块 */
 
+.project {
 
+    background-color: #f8fafc;
 
+    padding: 20px;
 
-/* Skills */
+    margin-top: 15px;
 
-
-.skills-container {
-
-
-    display: flex;
-
-
-    justify-content: center;
-
-
-    flex-wrap: wrap;
-
-
-    gap: 15px;
-
+    border-radius: 12px;
 
 }
 
 
 
-.skills-container span {
+.project h3 {
 
+    margin-top: 0;
 
-    background: white;
-
-
-    padding: 10px 22px;
-
-
-    border-radius: 25px;
-
-
-    box-shadow:
-
-    0 3px 10px rgba(0,0,0,0.08);
-
-
-    font-weight: 500;
-
+    color: #2b579a;
 
 }
 
 
 
+.status {
 
+    font-size: 0.9rem;
 
-
-
-/* Links */
-
-
-a {
-
-
-    color: #2563eb;
-
+    color: #777;
 
 }
 
 
 
+/* 兴趣列表 */
+
+ul {
+
+    padding-left: 20px;
+
+}
 
 
-/* Footer */
 
+li {
+
+    margin-bottom: 8px;
+
+}
+
+
+
+/* 底部 */
 
 footer {
 
+    margin-top: 20px;
 
-    background: #111827;
+    color: #777;
 
-
-    color: white;
-
-
-    text-align: center;
-
-
-    padding: 30px;
-
-
-    margin-top: 60px;
-
+    font-size: 0.9rem;
 
 }
 
 
 
+/* 手机适配 */
+
+@media (max-width: 600px) {
 
 
+    body {
 
-
-/* Mobile */
-
-
-@media(max-width:700px){
-
-
-    nav {
-
-
-        flex-direction: column;
-
-
-        gap: 15px;
-
+        padding: 25px 15px;
 
     }
-
-
-
-    nav ul {
-
-
-        flex-wrap: wrap;
-
-
-        justify-content:center;
-
-
-    }
-
 
 
     .hero h1 {
 
+        font-size: 2rem;
 
-        font-size: 2.2rem;
+    }
 
+
+    .card {
+
+        padding: 20px;
 
     }
 
