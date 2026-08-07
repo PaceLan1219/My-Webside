@@ -1,0 +1,37 @@
+[
+    {
+        "title": "PACE_Master",
+        "image": "assets/images/projects/pace_master.png",
+        "description": "A personal AI English learning system developed with Python. Includes AI assistant, vocabulary management, grammar learning, challenge centre and progress dashboard.",
+        "tags": [
+            "Python",
+            "AI",
+            "Database"
+        ],
+        "link": "projects/pace_master.html"
+    },
+
+    {
+        "title": "Portfolio V6.0",
+        "image": "assets/images/projects/portfolio_v6.png",
+        "description": "A modern personal portfolio website designed to showcase programming projects, design works, certificates and personal achievements.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "link": "index.html"
+    },
+
+    {
+        "title": "Python Projects",
+        "image": "assets/images/projects/python_projects.png",
+        "description": "A collection of Python programming projects, automation tools and experimental applications.",
+        "tags": [
+            "Python",
+            "Automation",
+            "Programming"
+        ],
+        "link":"projects/python_projects.html"
+    }
+]

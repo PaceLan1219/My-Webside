@@ -1,607 +1,982 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Pace Lan - Student Developer, Designer and Creator."
+    >
 
-<title>Pace Lan | Portfolio</title>
+    <meta
+        name="author"
+        content="Pace Lan"
+    >
 
-<link rel="stylesheet" href="style.css">
+    <title>Pace Lan | Student Developer</title>
 
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
-
 
 <body>
 
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="page-loader"
+    >
+
+        <div class="loader-logo">
+            PL
+        </div>
+
+        <div class="loader-text">
+            Loading Portfolio...
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#home">
+                    Pace Lan
+                </a>
+            </div>
+
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
 
-<!-- Navigation -->
 
-<nav class="navbar">
+            <ul
+                class="nav-links"
+                id="nav-links"
+            >
 
-<div class="logo">
-Pace Lan
-</div>
+                <li>
+                    <a
+                        href="#home"
+                        class="active"
+                    >
+                        Home
+                    </a>
+                </li>
 
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
 
-<ul>
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
 
-<li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </li>
 
-<li><a href="#about">About</a></li>
+                <li>
+                    <a href="#achievements">
+                        Achievements
+                    </a>
+                </li>
 
-<li><a href="#skills">Skills</a></li>
+                <li>
+                    <a href="#journey">
+                        Journey
+                    </a>
+                </li>
 
-<li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
 
-<li><a href="#school">School</a></li>
+            </ul>
 
-<li><a href="#journey">Journey</a></li>
 
-<li><a href="#interests">Interests</a></li>
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Toggle dark mode"
+                aria-pressed="false"
+            >
+                🌙
+            </button>
 
-</ul>
+        </nav>
 
+    </header>
 
-</nav>
 
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
 
+    <main>
 
 
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-<!-- Hero -->
+        <section
+            class="hero"
+            id="home"
+        >
 
+            <div class="hero-content">
 
-<section id="home" class="hero">
+                <span class="badge">
+                    Student Developer
+                </span>
 
 
-<div class="profile-placeholder">
-    Profile Photo<br>
-    Coming Soon
-</div>
+                <h1>
 
-<h1>
-Pace Lan
-</h1>
+                    Hello, I'm
 
+                    <span class="gradient-text">
+                        Pace Lan
+                    </span>
 
-<h3>
-New Zealand High School Student
-</h3>
+                </h1>
 
 
-<p>
+                <h2>
+                    Developer · Designer · Creator
+                </h2>
 
-A personal portfolio showcasing projects,
-learning experiences and creative work.
 
-</p>
+                <p>
+                    Welcome to my personal portfolio.
+                    <br>
+                    I build programming projects,
+                    <br>
+                    explore artificial intelligence,
+                    <br>
+                    design digital experiences
+                    <br>
+                    and continuously develop my technology skills.
+                </p>
 
 
-<a href="#projects" class="button">
-View My Projects
-</a>
+                <div class="hero-buttons">
 
+                    <a
+                        href="#projects"
+                        class="btn primary-btn"
+                    >
+                        View Projects
+                    </a>
 
-</section>
 
+                    <a
+                        href="#about"
+                        class="btn secondary-btn"
+                    >
+                        About Me
+                    </a>
 
 
+                    <a
+                        href="documents/Pace_Lan_CV.pdf"
+                        class="btn secondary-btn"
+                        download
+                    >
+                        Download CV
+                    </a>
 
 
+                    <a
+                        href="#contact"
+                        class="btn secondary-btn"
+                    >
+                        Get in Touch →
+                    </a>
 
+                </div>
 
+            </div>
 
-<!-- About -->
 
+            <div class="hero-image">
 
-<section id="about" class="section">
+                <div class="hero-image-wrapper">
 
+                    <!-- Profile Placeholder -->
 
-<h2>
-About Me
-</h2>
+                    <div
+                        class="profile-placeholder"
+                        aria-label="Pace Lan profile placeholder"
+                    >
+                        PL
+                    </div>
 
+                </div>
 
-<p>
+            </div>
 
-I am a New Zealand high school student interested
-in technology, artificial intelligence, programming
-and digital design.
+        </section>
 
-</p>
 
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
 
-<p>
+        <section
+            class="section"
+            id="about"
+        >
 
-This portfolio records my learning journey,
-personal projects and school work.
+            <div class="section-title">
 
-</p>
+                <span class="section-label">
+                    About
+                </span>
 
+                <h2>
+                    About Me
+                </h2>
 
-<p>
+                <p>
+                    A student developer exploring technology,
+                    programming and creative problem solving.
+                </p>
 
-I enjoy exploring new technologies and creating
-projects that combine creativity and problem solving.
+            </div>
 
-</p>
 
+            <div class="about-container">
 
-</section>
+                <div class="about-text">
 
+                    <p>
+                        I am a student who enjoys technology,
+                        programming, design and creative problem solving.
+                    </p>
 
+                    <p>
+                        Through continuous learning,
+                        I build projects that combine
+                        creativity with practical solutions.
+                    </p>
 
+                    <p>
+                        My interests include software development,
+                        artificial intelligence, website design,
+                        digital technologies and learning systems.
+                    </p>
 
 
+                    <a
+                        href="#skills"
+                        class="btn primary-btn"
+                    >
+                        Learn More
+                    </a>
 
+                </div>
 
 
-<!-- Skills -->
+                <div class="about-info">
 
+                    <div class="info-card">
 
-<section id="skills" class="section">
+                        <strong>
+                            01
+                        </strong>
 
+                        <h3>
+                            Education
+                        </h3>
 
-<h2>
-Skills & Learning
-</h2>
+                        <p>
+                            New Zealand Secondary School Student
+                        </p>
 
+                    </div>
 
 
-<div class="skill-grid">
+                    <div class="info-card">
 
+                        <strong>
+                            02
+                        </strong>
 
-<div class="skill-card">
+                        <h3>
+                            Interests
+                        </h3>
 
-<h3>
-Programming
-</h3>
+                        <p>
+                            Coding, AI, Design and Technology
+                        </p>
 
-<p>
-Python<br>
-HTML / CSS
-</p>
+                    </div>
 
-</div>
 
+                    <div class="info-card">
 
+                        <strong>
+                            03
+                        </strong>
 
+                        <h3>
+                            Vision
+                        </h3>
 
-<div class="skill-card">
+                        <p>
+                            Creating meaningful technology projects
+                        </p>
 
-<h3>
-Tools
-</h3>
+                    </div>
 
-<p>
-VS Code<br>
-Git & GitHub
-</p>
+                </div>
 
-</div>
+            </div>
 
+        </section>
 
 
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
 
+        <section
+            class="section"
+            id="skills"
+        >
 
-<div class="skill-card">
+            <div class="section-title">
 
-<h3>
-Design
-</h3>
+                <span class="section-label">
+                    Expertise
+                </span>
 
-<p>
-Digital Design<br>
-Visual Communication
-</p>
+                <h2>
+                    Skills
+                </h2>
 
-</div>
+                <p>
+                    Technologies and abilities I continue developing.
+                </p>
 
+            </div>
 
 
-</div>
+            <div class="skills-grid">
 
 
+                <!-- Python -->
 
-</section>
+                <article class="skill-card">
 
+                    <div class="skill-icon">
+                        PY
+                    </div>
 
+                    <h3>
+                        Python
+                    </h3>
 
+                    <p>
+                        Building software,
+                        learning systems,
+                        automation tools and applications.
+                    </p>
 
 
+                    <div class="skill-progress">
 
+                        <div class="progress-bar">
 
+                            <span
+                                style="width: 85%;"
+                            ></span>
 
-<!-- Projects -->
+                        </div>
 
+                        <small>
+                            85%
+                        </small>
 
-<section id="projects" class="section">
+                    </div>
 
+                </article>
 
-<h2>
-Personal Projects
-</h2>
 
+                <!-- Web Development -->
 
+                <article class="skill-card">
 
-<div class="project-card">
+                    <div class="skill-icon">
+                        WEB
+                    </div>
 
+                    <h3>
+                        Web Development
+                    </h3>
 
-<h3>
-PACE_Master
-</h3>
+                    <p>
+                        Creating responsive websites
+                        with HTML, CSS and JavaScript.
+                    </p>
 
+                </article>
 
-<p>
 
-A personal AI English learning system designed
-to support vocabulary, grammar and learning progress.
+                <!-- Artificial Intelligence -->
 
-</p>
+                <article class="skill-card">
 
+                    <div class="skill-icon">
+                        AI
+                    </div>
 
-<p>
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
 
-Technology:
-Python
+                    <p>
+                        Exploring AI systems,
+                        intelligent tools and automation.
+                    </p>
 
-</p>
+                </article>
 
 
-<span>
-Under Development
-</span>
+                <!-- Design -->
 
+                <article class="skill-card">
 
-</div>
+                    <div class="skill-icon">
+                        DVC
+                    </div>
 
+                    <h3>
+                        Design
+                    </h3>
 
+                    <p>
+                        Developing visual design,
+                        digital interfaces and creative concepts.
+                    </p>
 
+                </article>
 
+            </div>
 
 
+            <div
+                class="hero-buttons"
+                style="justify-content: center; margin-top: 40px;"
+            >
 
-<div class="project-card">
+                <a
+                    href="#contact"
+                    class="btn secondary-btn"
+                >
+                    Explore All Skills
+                </a>
 
+            </div>
 
-<h3>
-Portfolio Website
-</h3>
+        </section>
 
 
-<p>
+        <!-- =================================================
+             GITHUB
+        ================================================== -->
 
-A website created to learn web development
-and showcase personal projects.
+        <section
+            class="section"
+            id="github"
+        >
 
-</p>
+            <div class="section-title">
 
+                <span class="section-label">
+                    GitHub
+                </span>
 
-<p>
+                <h2>
+                    GitHub Projects
+                </h2>
 
-Technology:
-HTML / CSS, GitHub Pages
+                <p>
+                    My programming projects and experiments.
+                </p>
 
-</p>
+            </div>
 
 
-<span>
-Active
-</span>
+            <div
+                id="github-projects"
+                class="projects-grid"
+            >
 
+                <div class="project-card">
 
-</div>
+                    <div class="project-content">
 
+                        <h3>
+                            GitHub Projects
+                        </h3>
 
+                        <p>
+                            Loading GitHub projects...
+                        </p>
 
-</section>
+                    </div>
 
+                </div>
 
+            </div>
 
+        </section>
 
 
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
 
+        <section
+            class="section"
+            id="projects"
+        >
 
+            <div class="section-title">
 
-<!-- School Projects -->
+                <span class="section-label">
+                    Portfolio
+                </span>
 
+                <h2>
+                    Featured Projects
+                </h2>
 
-<section id="school" class="section">
+                <p>
+                    A collection of programming,
+                    AI, design and technology projects.
+                </p>
 
+            </div>
 
-<h2>
-School Projects
-</h2>
 
+            <div
+                id="project-container"
+                class="projects-grid"
+            >
 
+                <div class="project-card">
 
-<div class="project-card">
+                    <div class="project-content">
 
+                        <h3>
+                            Loading Projects
+                        </h3>
 
-<h3>
-School Project Showcase
-</h3>
+                        <p>
+                            Loading projects...
+                        </p>
 
+                    </div>
 
-<p>
+                </div>
 
-Selected projects from different subjects will
-be displayed here in the future.
+            </div>
 
-</p>
 
+            <div
+                class="hero-buttons"
+                style="justify-content: center; margin-top: 40px;"
+            >
 
-<p>
+                <a
+                    href="projects.html"
+                    class="btn primary-btn"
+                >
+                    View All Projects
+                </a>
 
-Subjects may include Digital Technologies,
-Design and Visual Communication, Science
-and other learning areas.
+            </div>
 
-</p>
+        </section>
 
 
-<span>
-Coming Soon
-</span>
+        <!-- =================================================
+             ACHIEVEMENTS
+        ================================================== -->
 
+        <section
+            class="section"
+            id="achievements"
+        >
 
-</div>
+            <div class="section-title">
 
+                <span class="section-label">
+                    Achievements
+                </span>
 
-</section>
+                <h2>
+                    Achievements
+                </h2>
 
+                <p>
+                    Certificates, awards and milestones.
+                </p>
 
+            </div>
 
 
+            <div class="achievement-grid">
 
 
+                <article class="achievement-card">
 
+                    <h3>
+                        Learning Journey
+                    </h3>
 
-<!-- Achievements -->
+                    <p>
+                        Continuous improvement in programming,
+                        design and technology.
+                    </p>
 
+                </article>
 
-<section class="section">
 
+                <article class="achievement-card">
 
-<h2>
-Academic Achievements
-</h2>
+                    <h3>
+                        PACE_Master
+                    </h3>
 
+                    <p>
+                        Personal AI English learning system
+                        developed with Python.
+                    </p>
 
-<p>
+                </article>
 
-Academic achievements and learning milestones
-will be added here.
 
-</p>
+                <article class="achievement-card">
 
+                    <h3>
+                        Portfolio V6.0
+                    </h3>
 
-</section>
+                    <p>
+                        Modern personal portfolio website
+                        showcasing projects and skills.
+                    </p>
 
+                </article>
 
+            </div>
 
+        </section>
 
 
+        <!-- =================================================
+             JOURNEY
+        ================================================== -->
 
+        <section
+            class="section"
+            id="journey"
+        >
 
+            <div class="section-title">
 
-<!-- Learning Journey -->
+                <span class="section-label">
+                    Journey
+                </span>
 
+                <h2>
+                    Experience &amp; Journey
+                </h2>
 
-<section id="journey" class="section">
+                <p>
+                    My learning and development journey.
+                </p>
 
+            </div>
 
-<h2>
-Learning Journey
-</h2>
 
+            <div class="timeline">
 
 
-<div class="timeline">
+                <article class="timeline-item">
 
+                    <span>
+                        2026
+                    </span>
 
+                    <div>
 
-<div class="timeline-item">
+                        <h3>
+                            Technology Development
+                        </h3>
 
-<h3>
-Early Learning
-</h3>
+                        <p>
+                            Developing programming skills
+                            and building personal software projects.
+                        </p>
 
-<p>
+                    </div>
 
-Building learning foundations and exploring
-different interests.
+                </article>
 
-</p>
 
-</div>
+                <article class="timeline-item">
 
+                    <span>
+                        2026
+                    </span>
 
+                    <div>
 
+                        <h3>
+                            PACE_Master Development
+                        </h3>
 
+                        <p>
+                            Building a personal AI English
+                            learning system with Python.
+                        </p>
 
-<div class="timeline-item">
+                    </div>
 
-<h3>
-New Learning Environment
-</h3>
+                </article>
 
-<p>
 
-Adapting to a new education environment and
-developing language and academic skills.
+                <article class="timeline-item">
 
-</p>
+                    <span>
+                        Future
+                    </span>
 
-</div>
+                    <div>
 
+                        <h3>
+                            Continuous Learning
+                        </h3>
 
+                        <p>
+                            Exploring advanced technology,
+                            AI, software development and
+                            creative digital experiences.
+                        </p>
 
+                    </div>
 
+                </article>
 
+            </div>
 
-<div class="timeline-item">
+        </section>
 
-<h3>
-2026 - Technology Exploration
-</h3>
 
-<p>
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
 
-Started developing personal projects,
-learning programming and exploring AI
-applications.
+        <section
+            class="section"
+            id="contact"
+        >
 
-</p>
+            <div class="section-title">
 
-</div>
+                <span class="section-label">
+                    Contact
+                </span>
 
+                <h2>
+                    Let's Connect
+                </h2>
 
+                <p>
+                    Feel free to explore my work
+                    and get in touch.
+                </p>
 
+            </div>
 
 
+            <div class="contact-container">
 
-<div class="timeline-item">
 
-<h3>
-Future Development
-</h3>
+                <article class="contact-card">
 
-<p>
+                    <div class="contact-icon">
+                        ✉
+                    </div>
 
-Continue improving skills, creating projects
-and recording new achievements.
+                    <h3>
+                        Email
+                    </h3>
 
-</p>
+                    <p>
+                        Contact information can be
+                        provided through the contact page.
+                    </p>
 
-</div>
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+                        Contact Me
+                        →
+                    </a>
 
+                </article>
 
 
-</div>
+                <article class="contact-card">
 
+                    <div class="contact-icon">
+                        ↗
+                    </div>
 
+                    <h3>
+                        Social &amp; Professional
+                    </h3>
 
-</section>
+                    <p>
+                        Find my projects,
+                        achievements and other work.
+                    </p>
 
+                    <a
+                        href="#github"
+                        class="project-link"
+                    >
+                        Explore Links
+                        →
+                    </a>
 
+                </article>
 
+            </div>
 
+        </section>
 
+    </main>
 
 
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-<!-- Interests -->
+    <footer class="footer">
 
+        <div class="logo">
+            <a href="#home">
+                Pace Lan
+            </a>
+        </div>
 
-<section id="interests" class="section">
 
+        <p>
+            Building · Learning · Creating
+        </p>
 
-<h2>
-Interests
-</h2>
 
+        <div class="footer-links">
 
+            <a href="#home">
+                Home
+            </a>
 
-<div class="interest-grid">
+            <a href="#projects">
+                Projects
+            </a>
 
+            <a href="#about">
+                About
+            </a>
 
+            <a href="#contact">
+                Contact
+            </a>
 
-<div class="interest-card">
+        </div>
 
-<h3>
-🏀 Basketball
-</h3>
 
-<p>
+        <p class="copyright">
 
-Enjoying teamwork, competition and continuous improvement.
+            ©
+            <span id="current-year">
+                2026
+            </span>
+            Pace Lan.
+            All Rights Reserved.
 
-</p>
+        </p>
 
-</div>
+    </footer>
 
 
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
 
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
 
 
-<div class="interest-card">
+    <!-- =====================================================
+         SCRIPT
+    ====================================================== -->
 
-<h3>
-🎹 Piano
-</h3>
-
-<p>
-
-Developing musical skills through practice and learning.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="interest-card">
-
-<h3>
-💻 Technology
-</h3>
-
-<p>
-
-Exploring programming, AI and digital creation.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="interest-card">
-
-<h3>
-📚 Learning
-</h3>
-
-<p>
-
-Continuously improving skills and exploring new knowledge.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 Pace Lan
-</p>
-
-</footer>
-
-
+    <script src="scripts.js"></script>
 
 </body>
 
 </html>
+```
